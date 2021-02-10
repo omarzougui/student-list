@@ -1,0 +1,9 @@
+<div>
+  <div *ngFor="let student of students" class="student">
+    <span>{{student.firstName}}</span>
+    <span>{{student.lastName}}</span>
+    <span>{{student.age}}</span>
+    <span><button (click)="click()">Details</button></span>
+    <span><button (click)="deleteStudent()">Remove</button></span>
+  </div>
+</div>
