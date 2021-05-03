@@ -4,6 +4,8 @@ import {StudentComponent} from './student-list/student/student.component';
 import {StudentListComponent} from './student-list/student-list.component';
 import {RouterModule, Routes} from '@angular/router';
 import {StudentRoutes} from './sudent.routes';
+import {SharedModule} from '@shared/shared.module';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 
 const routes: Routes = [
@@ -18,11 +20,11 @@ const routes: Routes = [
   }
 ];
 
-
 @NgModule({
-  declarations: [StudentComponent, StudentListComponent],
+  declarations: [StudentComponent, StudentListComponent, StudentDetailsComponent],
   imports: [
     CommonModule,
+    SharedModule,
     RouterModule.forChild(routes),
   ]
 })

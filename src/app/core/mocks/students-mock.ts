@@ -1,5 +1,9 @@
-import { IStudents } from "../core/models/students.model";
+import { IStudents } from '../models/students.model';
 
+/**
+ * @todo replace constant mock with mockserver librery
+ * @see https://www.npmjs.com/package/mockserver
+ */
 export const STUDENTS: IStudents[] = [
   {
     id: '1',

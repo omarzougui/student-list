@@ -1,1 +1,17 @@
-<p>student-list works!</p>
+<!--TODO  externalize student list item in dedicated component-->
+<!--TODO  add i18n translation -->
+
+<div>
+  <div *ngFor="let student of students$ | async" class="student">
+    <span>{{student.firstName}}</span>
+    <span>{{student.lastName}}</span>
+    <span>{{student.age}}</span>
+    <span><button (click)="displayStudentDetails(student.id)">Details</button></span>
+    <span><button (click)="deleteStudent(student.id)">Remove</button></span>
+  </div>
+</div>
+
+
+<app-student-details *ngIf="studentDetailsToDisplay$ | async as student"
+[student]="student">
+</app-student-details>
