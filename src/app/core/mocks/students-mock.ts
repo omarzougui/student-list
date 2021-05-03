@@ -35,4 +35,4 @@ export const STUDENTS: IStudents[] = [
     lastName: 'Lafronde',
     age: 20
   },
-]
+];
