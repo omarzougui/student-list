@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { StudentsService } from './students.service';
-import { IStudents } from './students.model';
+import { StudentsService } from '../core/services/students.service';
+import { IStudents } from '../core/models/students.model';
 
 @Component({
   selector: 'student-list',

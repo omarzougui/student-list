@@ -1,10 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-import { StudentsPageComponent } from './students/students-page.component';
-import { StudentListComponent } from './students/student-list.component';
-import { AppRoutingModule } from './app-routing.module';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {AppComponent} from './app.component';
+import {StudentsPageComponent} from './students/students-page.component';
+import {StudentListComponent} from './students/student-list.component';
+import {AppRoutingModule} from './core/app-routing.module';
+import {CoreModule} from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -14,9 +14,11 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

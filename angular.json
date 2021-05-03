@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "kata-sog"
+    }
+  },
+  "defaultProject": "kata-sog",
+  "cli": {
+    "analytics": false
+  }
 }

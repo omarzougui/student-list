@@ -1,5 +1,5 @@
 import { of } from "rxjs";
-import { STUDENTS } from "./students-mock";
+import { STUDENTS } from "../../students/students-mock";
 
 export class StudentsService {
   public getStudents() {
